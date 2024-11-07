@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design"
+    android:padding="16dp">
+
+    <!-- CardView for Admin Login and Visitor Portal Buttons (Horizontal) -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/black"> <!-- Set CardView color to cream -->
+
+        <!-- Horizontal LinearLayout for buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Admin Login Button with Vector Asset -->
+            <Button
+                android:id="@+id/adminLoginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:drawableTop="@drawable/baseline_person_24"
+                android:text="Admin Login"
+                android:textColor="@android:color/white" />
+
+
+            <!-- Visitor Portal Button with Vector Asset -->
+            <Button
+                android:id="@+id/visitorPortalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:drawableTop="@drawable/baseline_person_24"
+                android:text="Visitor"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

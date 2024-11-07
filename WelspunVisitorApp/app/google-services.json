@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "186817394175",
+    "project_id": "welspun-visitor-app-600ba",
+    "storage_bucket": "welspun-visitor-app-600ba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186817394175:android:e6d451bab3c4294a7b63ca",
+        "android_client_info": {
+          "package_name": "com.example.welspunvisitorapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPEczCCWGZC23drAdCufdUBM9aqWUBfjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
