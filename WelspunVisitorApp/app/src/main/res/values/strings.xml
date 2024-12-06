@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Welspun Visitor App</string>
+    <string-array name="am_pm_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="department_filter_options">
+        <item>All</item>
+        <item>WML</item>
+        <item>WSL</item>
+        <item>WDI</item>
+        <item>WIL</item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>WML</item>
+        <item>WSL</item>
+        <item>WDI</item>
+        <item>WIL</item>
+    </string-array>
+
+</resources>

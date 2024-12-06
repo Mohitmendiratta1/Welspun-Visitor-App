@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteEmployeeActivity">
+
+    <!-- Employee Code TextBox -->
+    <EditText
+        android:id="@+id/etEmployeeCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Code"
+        android:inputType="text"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmployeeCode"
+        android:padding="16dp" />
+
+    <!-- Aadhar Card Like CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEmployeeDetails"
+        android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="32dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/btnSubmit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="start|center_vertical">
+
+        <!-- Passport Size Image -->
+        <ImageView
+            android:id="@+id/imgEmployee"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Employee Details -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/tvEmployeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee Name:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmployeeDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvEmployeeDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department:"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <!-- Flag and Unflag Buttons -->
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="16dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/cardViewEmployeeDetails">
+
+<!-- Flag Button -->
+<Button
+    android:id="@+id/btnFlag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Flag"
+    android:layout_marginEnd="16dp" />
+
+<!-- Unflag Button -->
+<Button
+    android:id="@+id/btnUnflag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Unflag" />
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

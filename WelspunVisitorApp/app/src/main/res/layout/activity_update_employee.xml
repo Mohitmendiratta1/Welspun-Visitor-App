@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Profile CardView with Image and Name -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardElevation="4dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Profile Image Icon -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_person_24"
+                android:tint="@android:color/white" />
+
+            <!-- Employee Name Text -->
+            <TextView
+                android:id="@+id/employeeNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Employee Name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Visitor ID (TextView instead of EditText for non-editable field) -->
+    <TextView
+        android:id="@+id/visitorIdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visitor ID: [ID here]"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Employee Code (TextView instead of EditText for non-editable field) -->
+    <TextView
+        android:id="@+id/employeeCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Code: [Code here]"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Editable Fields for Visit Details -->
+    <EditText
+        android:id="@+id/visitDepartmentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Visit Department" />
+
+    <EditText
+        android:id="@+id/purposeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Purpose of Visit" />
+
+    <EditText
+        android:id="@+id/personMetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Person Met" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date" />
+
+    <EditText
+        android:id="@+id/checkInTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Check-in Time" />
+
+    <EditText
+        android:id="@+id/checkOutTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Check-out Time" />
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Visit"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>  <!-- Explicit black color -->
+    <color name="white">#FFFFFFFF</color>  <!-- Explicit white color -->
+    <color name="cream">#FFFDD0</color> <!-- Cream color -->
+    <color name="cream_color">#FFFDD0</color> <!-- Cream color -->
+    <color name="blue">#2196F3</color>
+    <color name="colorPrimary">#6200EE</color> <!-- You can use any color code here -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Optional: dark variant of colorPrimary -->
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <!-- Custom color for CardView background -->
+    <color name="card_view_background">#FF000000</color> <!-- CardView background color set to black -->
+
+    <!-- Colors for toggle button -->
+    <color name="toggle_off">#D3D3D3</color>         <!-- Default thumb color when toggle is off -->
+    <color name="toggle_on">#8B4513</color>          <!-- Brown thumb color when toggle is on -->
+    <color name="toggle_track_off">#BDBDBD</color>   <!-- Track color when toggle is off -->
+    <color name="toggle_track_on">#D2691E</color>    <!-- Track color when toggle is on -->
+</resources>
